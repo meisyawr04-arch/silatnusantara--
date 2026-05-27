@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silat Nusantara - Pusat Pelatihan Bela Diiri Premium</title>
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandDark: '#020617', // slate-950
+                        brandBlack: '#09090b', // zinc-950
+                    },
+                    boxShadow: {
+                        'glow-sm': '0 0 15px rgba(56, 189, 248, 0.15)',
+                        'glow': '0 0 25px rgba(56, 189, 248, 0.35)',
+                        'glow-heavy': '0 0 40px rgba(56, 189, 248, 0.6)',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts: Plus Jakarta Sans & Urbanist -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Urbanist:wght@700;800;900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .font-display { font-family: 'Urbanist', sans-serif; }
+    </style>
+</head>
+<body class="bg-brandDark text-slate-100 antialiased overflow-x-hidden">
+
+    <!-- FIXED NAVBAR WITH BLUR EFFECT -->
+    <nav class="fixed top-0 left-0 w-full z-50 bg-brandDark/70 backdrop-blur-md border-b border-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Logo -->
+            <a href="#" class="flex items-center space-x-3 group">
+                <div class="h-10 w-10 rounded-xl bg-gradient-to-br from-sky-400 to-blue-600 flex items-center justify-center shadow-glow-sm group-hover:shadow-glow transition-all duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-5 h-5 text-black">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
+                    </svg>
+                </div>
+                <span class="font-display font-extrabold text-xl tracking-wider text-white uppercase">Silat <span class="text-sky-400">Nusantara</span></span>
+            </a>
+            <!-- Desktop Links & CTA -->
+            <div class="hidden md:flex items-center space-x-8 text-sm font-medium">
+                <a href="#program" class="text-slate-400 hover:text-sky-400 transition-colors">Program Kelas</a>
+                <a href="#paket" class="text-slate-400 hover:text-sky-400 transition-colors">Paket Pendaftaran</a>
+                <a href="#pendaftaran" class="inline-flex items-center justify-center px-5 py-2.5 rounded-xl border border-sky-400/30 text-sky-400 hover:bg-sky-400/10 hover:border-sky-400 transition-all duration-300 font-semibold shadow-glow-sm">
+                    Gabung Sekarang
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        
+        <!-- HERO SECTION -->
+        <header id="home" class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden px-4">
+            <!-- Radial Glow Lights -->
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-sky-500/10 blur-[130px] rounded-full pointer-events-none"></div>
+            <div class="absolute top-1/4 right-[-10%] w-[400px] h-[400px] bg-blue-600/5 blur-[100px] rounded-full pointer-events-none"></div>
+
+            <div class="max-w-5xl mx-auto text-center relative z-10">
+                <!-- Tagline Badge -->
+                <div class="inline-flex items-center gap-2 py-1.5 px-4 rounded-full text-xs font-semibold bg-sky-950/60 text-sky-400 border border-sky-500/20 mb-8 uppercase tracking-widest">
+                    <span class="w-2 h-2 rounded-full bg-sky-400 shadow-glow"></span> Warisan Leluhur • Energi Modern
+                </div>
+                <!-- Main Title -->
+                <h1 class="font-display text-4xl sm:text-6xl lg:text-7xl font-black text-white mb-6 leading-[1.1] tracking-tight">
+                    KUASAI TEKNIKNYA, <br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 via-sky-200 to-blue-500">
+                        TEMUKAN KEKUATAN SEJATIMU
+                    </span>
+                </h1>
+                <!-- Subtitle -->
+                <p class="text-base sm:text-xl text-slate-400 max-w-3xl mx-auto mb-10 leading-relaxed font-light">
+                    Transformasikan diri Anda melalui kurikulum pencak silat premium. Menggabungkan disiplin mental tradisional dengan metodologi pelatihan fisik atlet modern kelas dunia.
+                </p>
+                <!-- Actions -->
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <a href="#pendaftaran" class="w-full sm:w-auto px-8 py-4 text-base font-bold text-brandDark bg-gradient-to-r from-sky-400 to-blue-500 rounded-xl shadow-glow hover:shadow-glow-heavy hover:scale-[1.02] transition-all duration-300 text-center tracking-wide">
+                        Ambil Kelas Gratis Pertama
+                    </a>
+                    <a href="#program" class="w-full sm:w-auto px-8 py-4 text-base font-semibold text-slate-300 bg-brandBlack/80 border border-slate-800 rounded-xl hover:border-slate-700 hover:text-white transition-all duration-300 text-center backdrop-blur-sm">
+                        Eksplorasi Program
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <!-- PROGRAM KELAS SECTION -->
+        <section id="program" class="py-24 px-4 max-w-7xl mx-auto relative border-t border-slate-900">
+            <div class="text-center mb-16">
+                <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-white mb-4 tracking-tight uppercase">Program Kelas Eksklusif</h2>
+                <p class="text-slate-400 max-w-xl mx-auto text-sm sm:text-base">Kurikulum terstruktur yang diadaptasi khusus untuk memenuhi target personal Anda.</p>
+            </div>
+
+            <!-- Responsive Dynamic Cards (3 Columns Desktop, 1 Column Mobile) -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1: Kelas Reguler -->
+                <div class="bg-brandBlack border border-slate-800/80 rounded-2xl p-8 hover:border-slate-700 hover:-translate-y-2 transition-all duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-sky-400 mb-6 group-hover:bg-sky-500 group-hover:text-black transition-all duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 01-6.364 0M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                        <h3 class="font-display text-xl font-bold text-white mb-3">Kelas Dasar / Seni</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">Fokus pada penguasaan jurus baku, keindahan gerak tradisi, fleksibilitas tubuh, dan pemahaman filosofi dasar bela diri.</p>
+                    </div>
+                    <div class="border-t border-slate-900 pt-4 flex justify-between items-center text-xs text-slate-500">
+                        <span>2x Seminggu</span>
+                        <span class="text-sky-400 font-medium">Semua Usia</span>
+                    </div>
+                </div>
+
+                <!-- Card 2: Kelas Atlet (Unggulan Highlighted) -->
+                <div class="relative bg-brandBlack border-2 border-sky-500/80 rounded-2xl p-8 hover:-translate-y-2 transition-all duration-300 flex flex-col justify-between group shadow-glow-sm">
+                    <!-- Penanda Visual Unggulan -->
+                    <span class="absolute -top-3 left-6 bg-sky-500 text-brandDark font-display font-black text-2xs tracking-widest uppercase px-3 py-1 rounded-md">
+                        KELAS UNGGULAN
+                    </span>
+                    
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-sky-500/10 border border-sky-400/30 flex items-center justify-center text-sky-400 mb-6 group-hover:bg-sky-500 group-hover:text-black transition-all duration-300 shadow-glow-sm">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.362 5.214A8.252 8.252 0 0112 21 8.25 8.25 0 016.038 7.048 8.287 8.287 0 009 9.6a8.983 8.983 0 013.361-6.867 8.21 8.21 0 003 2.48z" />
+                            </svg>
+                        </div>
+                        <h3 class="font-display text-xl font-bold text-white mb-3 text-transparent bg-clip-text bg-gradient-to-r from-white to-sky-300">Kelas Atlet (Tanding)</h3>
+                        <p class="text-slate-300 text-sm leading-relaxed mb-6">Program intensif berorientasi kompetisi. Pelatihan taktik bertarung, peningkatan kekuatan fisik ekstrem, mental juara, dan sparing berkala.</p>
+                    </div>
+                    <div class="border-t border-slate-800 pt-4 flex justify-between items-center text-xs text-sky-400/80">
+                        <span>4x Seminggu</span>
+                        <span class="bg-sky-500/10 px-2 py-0.5 rounded border border-sky-500/20 font-semibold">Rekomendasi</span>
+                    </div>
+                </div>
+
+                <!-- Card 3: Kelas Privat -->
+                <div class="bg-brandBlack border border-slate-800/80 rounded-2xl p-8 hover:border-slate-700 hover:-translate-y-2 transition-all duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-sky-400 mb-6 group-hover:bg-sky-500 group-hover:text-black transition-all duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
+                            </svg>
+                        </div>
+                        <h3 class="font-display text-xl font-bold text-white mb-3">Kelas VIP / Privat</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">Sesi 1-on-1 eksklusif bersama Dewan Guru Senior. Desain materi khusus (*customized*), jadwal fleksibel, dan pendampingan personal yang mendalam.</p>
+                    </div>
+                    <div class="border-t border-slate-900 pt-4 flex justify-between items-center text-xs text-slate-500">
+                        <span>Jadwal Fleksibel</span>
+                        <span class="text-sky-400 font-medium">Privat 1-on-1</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PAKET PENDAFTARAN SECTION -->
+        <section id="paket" class="py-24 px-4 bg-gradient-to-b from-brandDark via-brandBlack to-brandDark border-t border-slate-900">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-white mb-4 tracking-tight uppercase">Paket Keanggotaan</h2>
+                    <p class="text-slate-400 max-w-xl mx-auto text-sm sm:text-base">Investasi terbaik untuk perlindungan diri, kebugaran, dan prestasi.</p>
+                </div>
+
+                <!-- 3 Pricing Cards -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch max-w-5xl mx-auto">
+                    <!-- Paket Basic -->
+                    <div class="bg-brandDark/50 border border-slate-800/80 rounded-2xl p-8 flex flex-col justify-between hover:border-slate-700 transition-all">
+                        <div>
+                            <span class="text-xs font-bold text-slate-400 uppercase tracking-widest block mb-1">Starter</span>
+                            <h3 class="font-display text-xl font-bold text-white">Paket Dasar</h3>
+                            <div class="mt-4 flex items-baseline text-white">
+                                <span class="text-xl font-semibold">Rp</span>
+                                <span class="text-4xl font-black font-display tracking-tight">350K</span>
+                                <span class="ml-1 text-xs text-slate-400">/bulan</span>
+                            </div>
+                            <p class="mt-4 text-xs text-slate-400 leading-relaxed">Sangat ideal untuk pemula yang ingin membangun fondasi gerakan dasar silat.</p>
+                            
+                            <ul class="mt-6 space-y-3.5 text-xs sm:text-sm text-slate-300 border-t border-slate-900 pt-6">
+                                <li class="flex items-center gap-3"><span class="text-sky-400">✓</span> Akses Kelas Dasar & Seni</li>
+                                <li class="flex items-center gap-3"><span class="text-sky-400">✓</span> Sertifikasi Kenaikan Sabuk Resmi</li>
+                                <li class="flex items-center gap-3 text-slate-600 line-through"><span>✗</span> Seragam Khusus Latihan</li>
+                            </ul>
+                        </div>
+                        <div class="mt-8">
+                            <a href="#pendaftaran" class="block w-full py-3 px-4 rounded-xl text-center text-sm font-semibold text-slate-300 bg-slate-900 border border-slate-800 hover:bg-slate-800 transition-all">Pilih Paket</a>
+                        </div>
+                    </div>
+
+                    <!-- Paket Reguler (Paling Populer Highlighted) -->
+                    <div class="relative bg-brandBlack border-2 border-sky-400 rounded-2xl p-8 flex flex-col justify-between shadow-glow transform md:scale-105 z-10">
+                        <!-- Badge Paling Populer -->
+                        <span class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-gradient-to-r from-sky-400 to-blue-600 text-black font-display font-black text-2xs py-1 px-4 rounded-full tracking-widest uppercase shadow-md">
+                            Paling Populer
+                        </span>
+                        
+                        <div>
+                            <span class="text-xs font-bold text-sky-400 uppercase tracking-widest block mb-1">Rekomendasi</span>
+                            <h3 class="font-display text-xl font-bold text-white">Paket Reguler</h3>
+                            <div class="mt-4 flex items-baseline text-white">
+                                <span class="text-xl font-semibold">Rp</span>
+                                <span class="text-4xl font-black font-display tracking-tight">550K</span>
+                                <span class="ml-1 text-xs text-slate-400">/bulan</span>
+                            </div>
+                            <p class="mt-4 text-xs text-sky-300/80 leading-relaxed">Pilihan paling komprehensif untuk penguasaan teknik bela diri fisik yang efektif.</p>
+                            
+                            <ul class="mt-6 space-y-3.5 text-xs sm:text-sm text-slate-200 border-t border-sky-950 pt-6">
+                                <li class="flex items-center gap-3"><span class="text-sky-400">✓</span> Akses Kelas Dasar + Kelas Atlet</li>
+                                <li class="flex items-center gap-3"><span class="text-sky-400">✓</span> 1 Set Seragam Silat Resmi</li>
+                                <li class="flex items-center gap-3"><span class="text-sky-400">✓</span> Sesi Sparing & Evaluasi Berkala</li>
+                            </ul>
+                        </div>
+                        <div class="mt-8">
+                            <a href="#pendaftaran" class="block w-full py-3 px-4 rounded-xl text-center text-sm font-bold text-black bg-gradient-to-r from-sky-400 to-blue-400 shadow-glow hover:shadow-glow-heavy hover:scale-[1.01] transition-all duration-300">Ambil Paket Ini</a>
+                        </div>
+                    </div>
+
+                    <!-- Paket VIP / Premium -->
+                    <div class="bg-brandDark/50 border border-slate-800/80 rounded-2xl p-8 flex flex-col justify-between hover:border-slate-700 transition-all">
+                        <div>
+                            <span class="text-xs font-bold text-slate-400 uppercase tracking-widest block mb-1">Eksklusif</span>
+                            <h3 class="font-display text-xl font-bold text-white">Paket Elite VIP</h3>
+                            <div class="mt-4 flex items-baseline text-white">
+                                <span class="text-xl font-semibold">Rp</span>
+                                <span class="text-4xl font-black font-display tracking-tight">1.5M</span>
+                                <span class="ml-1 text-xs text-slate-400">/bulan</span>
+                            </div>
+                            <p class="mt-4 text-xs text-slate-400 leading-relaxed">Akses penuh privasi tinggi untuk akselerasi penguasaan seni bela diri tingkat tinggi.</p>
+                            
+                            <ul class="mt-6 space-y-3.5 text-xs sm:text-sm text-slate-300 border-t border-slate-900 pt-6">
+                                <li class="flex items-center gap-3"><span class="text-sky-400">✓</span> Sesi Privat 1-on-1 Bebas Atur Waktu</li>
+                                <li class="flex items-center gap-3"><span class="text-sky-400">✓</span> Free Uniform & Atribut Premium</li>
+                                <li class="flex items-center gap-3"><span class="text-sky-400">✓</span> Konsultasi Nutrisi & Kebugaran Fisik</li>
+                            </ul>
+                        </div>
+                        <div class="mt-8">
+                            <a href="#pendaftaran" class="block w-full py-3 px-4 rounded-xl text-center text-sm font-semibold text-slate-300 bg-slate-900 border border-slate-800 hover:bg-slate-800 transition-all">Pilih Paket</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FORMULIR PENDAFTARAN SECTION -->
+        <section id="pendaftaran" class="py-24 px-4 max-w-3xl mx-auto relative border-t border-slate-900">
+            <!-- Glow background behind form -->
+            <div class="absolute bottom-10 left-1/2 -translate-x-1/2 w-[400px] h-[400px] bg-sky-500/5 blur-[100px] rounded-full pointer-events-none"></div>
+
+            <div class="bg-brandBlack border border-slate-800/80 rounded-3xl p-6 sm:p-10 relative z-10 shadow-xl">
+                <div class="text-center mb-10">
+                    <h2 class="font-display text-2xl sm:text-3xl font-extrabold text-white mb-2 uppercase tracking-wide">Formulir Pendaftaran Anggota</h2>
+                    <p class="text-slate-400 text-xs sm:text-sm">Isi data lengkap Anda di bawah ini untuk memulai langkah awal transformasi diri.</p>
+                </div>
+
+                <!-- Modern Segmented Form -->
+                <form action="#" method="POST" class="space-y-8">
+                    
+                    <!-- Sub-bagian 1: Data Diri -->
+                    <div class="space-y-5">
+                        <div class="flex items-center space-x-3 mb-2">
+                            <span class="w-6 h-6 rounded-md bg-sky-500/10 text-sky-400 text-xs font-bold flex items-center justify-center border border-sky-500/20">01</span>
+                            <h3 class="text-sm font-semibold text-slate-200 tracking-wide uppercase">Identitas Pribadi</h3>
+                        </div>
+                        <div class="h-px bg-gradient-to-r from-slate-800 via-slate-900 to-transparent w-full"></div>
+                        
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label for="nama" class="block text-xs font-medium text-slate-400 mb-1.5">Nama Lengkap *</label>
+                                <input type="text" id="nama" name="nama" required class="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-600 focus:outline-none focus:border-sky-400 focus:ring-1 focus:ring-sky-400 transition-all" placeholder="Contoh: Ksatria Nusantara">
+                            </div>
+                            <div>
+                                <label for="panggilan" class="block text-xs font-medium text-slate-400 mb-1.5">Nama Panggilan</label>
+                                <input type="text" id="panggilan" name="panggilan" class="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-600 focus:outline-none focus:border-sky-400 focus:ring-1 focus:ring-sky-400 transition-all" placeholder="Contoh: Arya">
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label for="gender" class="block text-xs font-medium text-slate-400 mb-1.5">Jenis Kelamin *</label>
+                                <select id="gender" name="gender" required class="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-sky-400 focus:ring-1 focus:ring-sky-400 transition-all">
+                                    <option value="" disabled selected class="text-slate-600">Pilih Jenis Kelamin</option>
+                                    <option value="Laki-laki">Laki-laki</option>
+                                    <option value="Perempuan">Perempuan</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="usia" class="block text-xs font-medium text-slate-400 mb-1.5">Usia Saat Ini *</label>
+                                <input type="number" id="usia" name="usia" required class="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-600 focus:outline-none focus:border-sky-400 focus:ring-1 focus:ring-sky-400 transition-all" placeholder="Contoh: 21">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sub-bagian 2: Kontak -->
+                    <div class="space-y-5">
+                        <div class="flex items-center space-x-3 mb-2">
+                            <span class="w-6 h-6 rounded-md bg-sky-500/10 text-sky-400 text-xs font-bold flex items-center justify-center border border-sky-500/20">02</span>
+                            <h3 class="text-sm font-semibold text-slate-200 tracking-wide uppercase">Kontak Hubung</h3>
+                        </div>
+                        <div class="h-px bg-gradient-to-r from-slate-800 via-slate-900 to-transparent w-full"></div>
+                        
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label for="whatsapp" class="block text-xs font-medium text-slate-400 mb-1.5">No. WhatsApp aktif *</label>
+                                <input type="tel" id="whatsapp" name="whatsapp" required class="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-600 focus:outline-none focus:border-sky-400 focus:ring-1 focus:ring-sky-400 transition-all" placeholder="08XXXXXXXXXX">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-xs font-medium text-slate-400 mb-1.5">Alamat Email</label>
+                                <input type="email" id="email" name="email" class="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-600 focus:outline-none focus:border-sky-400 focus:ring-1 focus:ring-sky-400 transition-all" placeholder="name@domain.com">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sub-bagian 3: Pilihan Kelas & Kondisi -->
+                    <div class="space-y-5">
+                        <div class="flex items-center space-x-3 mb-2">
+                            <span class="w-6 h-6 rounded-md bg-sky-500/10 text-sky-400 text-xs font-bold flex items-center justify-center border border-sky-500/20">03</span>
+                            <h3 class="text-sm font-semibold text-slate-200 tracking-wide uppercase">Kelas & Kondisi Fisik</h3>
+                        </div>
+                        <div class="h-px bg-gradient-to-r from-slate-800 via-slate-900 to-transparent w-full"></div>
+                        
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label for="pilihan_kelas" class="block text-xs font-medium text-slate-400 mb-1.5">Pilihan Program Kelas *</label>
+                                <select id="pilihan_kelas" name="pilihan_kelas" required class="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-sky-400 focus:ring-1 focus:ring-sky-400 transition-all">
+                                    <option value="" disabled selected>Pilih Program Kelas</option>
+                                    <option value="Dasar / Seni">Kelas Dasar / Seni (Paket Starter)</option>
+                                    <option value="Atlet / Tanding">Kelas Atlet / Tanding (Paket Reguler)</option>
+                                    <option value="Privat / VIP">Kelas VIP / Privat (Paket Elite)</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="riwayat_cedera" class="block text-xs font-medium text-slate-400 mb-1.5">Riwayat Cedera Medis (Jika Ada)</label>
+                                <input type="text" id="riwayat_cedera" name="riwayat_cedera" class="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-600 focus:outline-none focus:border-sky-400 focus:ring-1 focus:ring-sky-400 transition-all" placeholder="Contoh: Asma, Pernah cedera lutut (opsional)">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="pt-4">
+                        <button type="submit" class="w-full py-4 text-base font-bold text-brandDark bg-gradient-to-r from-sky-400 to-blue-400 rounded-xl shadow-glow hover:shadow-glow-heavy hover:scale-[1.01] transition-all duration-300 tracking-wide">
+                            Kirim Formulir Pendaftaran
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER SECTION -->
+    <footer class="bg-brandBlack border-t border-slate-900/60 text-slate-500 text-xs py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6">
+            <!-- Brand -->
+            <div class="flex items-center space-x-3">
+                <div class="h-6 w-6 rounded bg-sky-500 flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-3.5 h-3.5 text-black">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
+                    </svg>
+                </div>
+                <span class="font-display font-black text-slate-300 tracking-wider uppercase text-xs">Silat <span class="text-sky-400">Nusantara</span></span>
+            </div>
+            <!-- Copyright Disclaimer -->
+            <p class="text-center sm:text-right text-slate-600 leading-relaxed max-w-md">
+                &copy; 2026 Silat Nusantara. All rights reserved. Melestarikan Kebudayaan Agung Nusantara Melalui Standarisasi Pelatihan Profesional & Eksklusif.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
